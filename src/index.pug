@@ -1,0 +1,117 @@
+extends pug/base
+
+prepend vars
+	- title = 'Резюме'
+	- description = 'Резюме Александра Рогова'
+
+append vars
+	- link.icon16x16 = '/favicon_16x16.png'
+	- link.icon32x32 = '/favicon_32x32.png'
+
+block content
+	.container
+		//profile
+		section.section
+			.info
+				.info__img
+					img(src='/images/rogov.jpg' alt='')
+				.info__block
+					.info__block-item Александр
+					.info__block-item 07.12.1990
+					.info__block-item Пермь
+					.info__block-item
+						a +7(919)49-555-07
+				.info__stamp
+					img(src='/images/stamp.png' alt='')
+		//END profile
+		//skill
+		section.section
+			.skill
+				.skill__title Навыки
+				form.skill__box
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span html 5
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span sass
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox')
+							span.skill__item-square
+							span.skill__item-span vanilajs
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span git
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span css3
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span less
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox')
+							span.skill__item-square
+							span.skill__item-span angular
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span foundation
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span БЭМ
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span gulp
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span jquery
+					.skill__box-col
+						label.skill__item
+							input.skill__item-checkbox(type='checkbox', checked='')
+							span.skill__item-square
+							span.skill__item-span bootstrap
+		//END skill
+		//level js
+		section.section
+			.level
+				.meter
+					.meter__box
+						.meter__score
+							.meter__score-low
+							.meter__score-avg
+							.meter__score-high
+						.meter__score-inner
+							.meter__score-inner-line
+								.meter__score-inner-tick
+				.score
+					.score__title Мой уровень владения<br>Java Script
+					.score__number.animate__score#benefits__number
+		//END level js
+
+
+
+
+
+
+
+
+
